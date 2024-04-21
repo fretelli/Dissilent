@@ -1,22 +1,12 @@
-name: Backup to GitHub
-
-on:
-  schedule:
-    - cron: '0 */6 * * *' # 每6小时执行一次
-  workflow_dispatch:
-
-jobs:
-  backup:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout Gitee repository
-      uses: actions/checkout@v2
-      with:
-        repository: 'fretelli/Dissilent网站'
-        token: ${{ secrets.GITEE_TOKEN }} # 使用在 GitHub Secrets 中设置的 Gitee 访问令牌
-
-    - name: Push to GitHub
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }} # 使用在 GitHub Secrets 中设置的 GitHub 访问令牌
-        repository: 'fretelli/Dissilent'
+            - name: Force sync gitee codebase
+  # You may pin to the exact commit or the version.
+  # uses: fretelli/force-sync-gitee-action@53b6761c6df2fc937f0ca1d8f1480483
+  uses: fretelli/force-sync-gitee-action@v1.0.1
+  with:
+    # 用户名
+    username: 312941209@qq.com
+    # 密码
+    password: f1989318
+    # 仓库名
+    repository: Dissilent网站
+          
