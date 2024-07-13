@@ -121,11 +121,10 @@ ul.menu > li ul li a:hover{
     text-decoration: underline;
 }
 
-/*����������ʽ*/
+
 A {FONT-SIZE: 12px; COLOR: #FFF;}
 A:link {COLOR: #FFF; TEXT-DECORATION: none;}
 A:visited {COLOR: #FFF; TEXT-DECORATION: none;}
 A:hover {COLOR: #FFF; TEXT-DECORATION:underline;}
 A:active {COLOR: #FFF; TEXT-DECORATION: none;}
 
-/*  ����ͼ�� http://www.lanrentuku.com/  */
